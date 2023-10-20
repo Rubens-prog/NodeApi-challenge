@@ -1,0 +1,28 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "NodeJs Challenge",
+    "description": "Documentation for challenge api",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "paths": {
+    "/users": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  }
+}
